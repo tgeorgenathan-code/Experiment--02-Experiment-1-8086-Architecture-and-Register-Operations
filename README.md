@@ -162,6 +162,10 @@ Write an 8086 assembly language program to exchange the contents of two
 7.  Record the observed results and compare them with the expected
     results.
 ## Screenshot of the results 
+<img width="1224" height="552" alt="image" src="https://github.com/user-attachments/assets/708f2829-ba4f-4f26-a728-944a1085c924" />
+
+<img width="1224" height="552" alt="image" src="https://github.com/user-attachments/assets/ad5d03dd-eb20-4da4-8273-31ce96460dbd" />
+
 
 
 
@@ -175,13 +179,22 @@ storage and the exchange of two 16-bit memory values.
 ## Viva Voce Questions
 
 1.  What is the function of the BIU in the 8086?
+  Ans: BIU stands for Bus Interface Unit. It fetches instructions from memory, generates physical addresses, and handles data transfer between the processor, memory and I/O devices.
 2.  What is the role of the EU?
+   Ans: EU stands for Execution Unit. It decodes and executes instructions using the ALU, general-purpose registers and flag register.
 3.  Why does the 8086 use a 6-byte instruction queue?
+  Ans: It stores upcoming instructions so that the BIU can fetch instructions while the EU executes previous instructions. This increases processing speed through pipelining.
 4.  What is the maximum physical memory address space of the 8086?
+  Ans: The 8086 has a 20-bit address bus, so it can address a maximum of 1 MB of physical memory (2²⁰ bytes).
 5.  What is the difference between a register and a memory variable?
+ Ans:
+- Register: A small, high-speed storage location inside the CPU.
+- Memory variable: A named storage location in RAM used to store data.
 6.  Does the `MOV` instruction change the source operand?
+  Ans: No. The MOV instruction copies data from the source to the destination without changing the original source value.
 7.  Why are registers used when exchanging two memory values?
+  Ans: Registers are used as temporary storage because the 8086 does not support direct memory-to-memory data transfer using the MOV instruction.
 8.  What is the purpose of the DS segment register?
-
+  Ans: DS stands for Data Segment. It stores the starting segment address of the data segment and is used to access data variables in memory.
  
 ` 
